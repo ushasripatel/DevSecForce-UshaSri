@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class AccountTokenService {
 
+    private static final byte[] TOKEN_KEY = "Usha123".getBytes(StandardCharsets.UTF_8);
 
     public String tokenize(String accountNumber) {
         try {
